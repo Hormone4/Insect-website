@@ -6,22 +6,9 @@ body {
     margin: 0;
     padding: 0;
 }
-/*
-body {
-    text-align: center;
-    font-family: Arial, sans-serif;
 
 
-    height: 600px;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 500px 100px;
-    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-    align-items: center;
-    justify-items: center;
-}*/
-
-
+/************ HEADER ************/
 header {
     justify-content: center;
     align-items: center;
@@ -46,8 +33,23 @@ header a:hover {
 
 
 
+/************ RADIOS ************/
+.filter-switch label {
+    cursor: pointer;
+}
+.filter-switch-item input:checked + label {
+    color: inherit;
+}
+.filter-switch-item input:not(:checked) + label {
+    --bg-opacity: 0;
+    box-shadow: none;
+}
 
 
+
+
+
+/************ CAROUSEL ************/
 main#carousel {
     grid-row: 1 / 2;
     grid-column: 1 / 8;
@@ -91,6 +93,7 @@ div.item {
     translateX(calc(-300px * var(--r)));
     z-index: calc((var(--position) - var(--abs)));
     background-color: #e3d5b8;
+    border-radius: 10px;
 }
 
 
@@ -162,7 +165,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 
 
-
+/************ FOOTER ************/
 footer {
     display: flex;
     justify-content: center;
