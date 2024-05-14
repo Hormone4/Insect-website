@@ -25,16 +25,15 @@
 
     <section>
         <h1>Adopt your insect!</h1>
-        choose his family
-
     </section>
 
 
-    <input type="radio" name="position" checked />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
+
+    <input type="radio" class="carousel-choice" name="position" checked />
+    <input type="radio" class="carousel-choice" name="position" />
+    <input type="radio" class="carousel-choice" name="position" />
+    <input type="radio" class="carousel-choice" name="position" />
+    <input type="radio" class="carousel-choice" name="position" />
 
     <main id="carousel">
         <div class="item">
@@ -56,12 +55,18 @@
                 <img src="../img/Monster4Pack.gif"><br>
                 <h2>Diptera</h2>
             </a>
-            <br>-ptéra<br>-le pokémon ?
+            <br>- ptéra
+            <br>- le pokémon ?
         </div>
         <div class="item"></div>
         <div class="item"></div>
     </main>
 
+
+    <section>
+        <h1 id="insect-choice">Your choice: beetle (or diptera, or etc.. modify h1 to be the real choice with javascript)</h1>
+        <input type="button" value="Adopt now!">
+    </section>
 
 
     <section>
@@ -101,6 +106,9 @@
 
         </nav>
     </footer>
+
+
+    <script src="../js/script.js"></script>
 
 </body>
 
