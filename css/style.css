@@ -114,15 +114,15 @@ div.item {
 
 div.item:nth-of-type(1) {
     --offset: 1;
-    background-color: #e3d5b8;
+    background-color: #904f25;
 }
 div.item:nth-of-type(2) {
     --offset: 2;
-    background-color: #d7b877;
+    background-color: #9d605b;
 }
 div.item:nth-of-type(3) {
     --offset: 3;
-    background-color: #e3d5b8;
+    background-color: #618943;
 }
 div.item:nth-of-type(4) {
     --offset: 4;
