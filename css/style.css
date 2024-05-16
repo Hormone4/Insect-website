@@ -59,6 +59,18 @@ footer a:hover {
     text-decoration: underline;
 }
 */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header a, footer a {
     font-family: consolas, serif;
     color: #9a77fa;
@@ -75,17 +87,15 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
-header a img, footer a img{
+header a img, footer a img, footer img:not(a img){
     width : 20px;
     height: 20px;
-    margin-right: 5px;
+    margin-right: 8px;
 }
-/* footer img but NOT footer a img */
-footer img:not(a img) {
-    width : 20px;
-    height: 20px;
-    margin-right: 0;
-}
+
+
+
+
 
 /************ RADIOS ************/
 .filter-switch label {
@@ -101,6 +111,19 @@ footer img:not(a img) {
 
 
 
+/************ LISTS ************/
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+ul, ol {
+    align-items: flex-start;
+    text-align: left;
+}
 
 
 /************ CAROUSEL ************/
@@ -241,7 +264,13 @@ div.item:nth-of-type(5) {
     padding : 10px;
     margin : 10px;
     width : 500px;
-    text-align: left; /*apagnan*/
+    text-align: left; 
+    max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+    box-sizing: border-box;
+}
+
+#insect_def img {
+    height :400px;
 }
 
 
