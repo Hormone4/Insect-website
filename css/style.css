@@ -71,7 +71,7 @@ nav {
     align-items: center;
 }
 
-header a, footer a {
+footer a {
     font-family: consolas, serif;
     color: #9a77fa;
     text-decoration: none;
@@ -82,7 +82,7 @@ header a, footer a {
     
 }
 
-header a:hover, footer a:hover{
+footer a:hover{
     color: #110912;
     text-decoration: underline;
 }
@@ -91,6 +91,31 @@ header a img, footer a img, footer img:not(a img){
     width : 20px;
     height: 20px;
     margin-right: 8px;
+}
+
+
+header a {
+    font-family: consolas, serif;
+    color: #000000;
+    text-decoration: none;
+    /*display: inline-block;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-nav {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+.header-nav:hover {
+    background-color: #ffffff;
+    color: #fff8f8;
+    text-decoration: underline;
+
 }
 
 
