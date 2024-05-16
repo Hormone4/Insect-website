@@ -256,7 +256,12 @@ div.item:nth-of-type(5) {
 #insect_def {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#insect_def img {
+    height :370px;
 }
 
 #insect_stat {
@@ -269,8 +274,17 @@ div.item:nth-of-type(5) {
     box-sizing: border-box;
 }
 
-#insect_def img {
-    height :400px;
+.source {
+    font-size: 0.8em;
+    font-style: italic;
+}
+.source a {
+    color: #9a77fa;
+    text-decoration: none;
+}
+.source a:hover {
+    color: #6f2382;
+    text-decoration: underline;
 }
 
 
