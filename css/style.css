@@ -8,7 +8,7 @@ body {
 }
 
 
-/************ HEADER ************/
+/************ HEADER & FOOTER ************/
 header {
     justify-content: center;
     align-items: center;
@@ -19,19 +19,73 @@ header {
     padding: 10px;
 }
 
-header a {
-    font-family: consolas, serif;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #3c383c;
+    color: #fff8f8;
+    font-family: consolas, monospace;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+header nav, footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* set space between items */
+    gap: 10px;
+    
+}
+/*
+footer img {
+    width : 20px;
+    height: 20px;
+}
+
+footer a {
     color: #9a77fa;
     text-decoration: none;
     display: inline-block;
+
 }
 
-header a:hover {
+footer a:hover {
+    color: #6f2382;
+    text-decoration: underline;
+}
+*/
+header a, footer a {
+    font-family: consolas, serif;
+    color: #9a77fa;
+    text-decoration: none;
+    /*display: inline-block;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header a:hover, footer a:hover{
     color: #110912;
     text-decoration: underline;
 }
 
-
+header a img, footer a img{
+    width : 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+/* footer img but NOT footer a img */
+footer img:not(a img) {
+    width : 20px;
+    height: 20px;
+    margin-right: 0;
+}
 
 /************ RADIOS ************/
 .filter-switch label {
@@ -175,41 +229,21 @@ div.item:nth-of-type(5) {
 }
 
 
-
-
-
-
-
-
-/************ FOOTER ************/
-footer {
+/************ INSECT PAGES ****************/
+#insect_def {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center
+}
 
-    background-color: #3c383c;
-    color: #fff8f8;
-    font-family: consolas, monospace;
-    font-size: 1em;
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
+#insect_stat {
+    border : 2px solid black;
+    padding : 10px;
+    margin : 10px;
+    width : 500px;
+    text-align: left; /*apagnan*/
 }
 
 
-footer img {
-    width : 20px;
-    height: 20px;
-}
 
-footer a {
-    color: #9a77fa;
-    text-decoration: none;
-    display: inline-block;
 
-}
-
-footer a:hover {
-    color: #6f2382;
-    text-decoration: underline;
-}
