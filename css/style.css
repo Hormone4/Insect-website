@@ -1,4 +1,5 @@
 
+/************ BODY ************/
 body {
     text-align: center;
 
@@ -12,9 +13,11 @@ body {
 header {
     justify-content: center;
     align-items: center;
+    background-image: url("../img/banner.jpg");
 
-    background-color: #46753d;
-    color: #fff8f8;
+
+    background-color: #f1f0eb;
+    color: #000000;
     text-align: center;
     padding: 10px;
 }
@@ -29,7 +32,7 @@ footer {
     font-family: consolas, monospace;
     font-size: 1em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 10px;
 }
 
@@ -41,24 +44,7 @@ header nav, footer nav{
     gap: 10px;
     
 }
-/*
-footer img {
-    width : 20px;
-    height: 20px;
-}
 
-footer a {
-    color: #9a77fa;
-    text-decoration: none;
-    display: inline-block;
-
-}
-
-footer a:hover {
-    color: #6f2382;
-    text-decoration: underline;
-}
-*/
 nav {
     display: flex;
     flex-direction: row;
@@ -105,6 +91,7 @@ header a {
 
 }
 .header-nav {
+    background-color: #f1f0eb;
     margin-left: 2px;
     margin-right: 2px;
     padding: 5px;
@@ -112,8 +99,6 @@ header a {
     border: 1px solid #000000;
 }
 .header-nav:hover {
-    background-color: #ffffff;
-    color: #fff8f8;
     text-decoration: underline;
 
 }
@@ -122,17 +107,6 @@ header a {
 
 
 
-/************ RADIOS ************/
-.filter-switch label {
-    cursor: pointer;
-}
-.filter-switch-item input:checked + label {
-    color: inherit;
-}
-.filter-switch-item input:not(:checked) + label {
-    --bg-opacity: 0;
-    box-shadow: none;
-}
 
 
 
@@ -150,6 +124,18 @@ ul, ol {
     text-align: left;
 }
 
+
+/************ RADIOS ************/
+.filter-switch label {
+    cursor: pointer;
+}
+.filter-switch-item input:checked + label {
+    color: inherit;
+}
+.filter-switch-item input:not(:checked) + label {
+    --bg-opacity: 0;
+    box-shadow: none;
+}
 
 /************ CAROUSEL ************/
 main#carousel {
@@ -277,6 +263,46 @@ div.item:nth-of-type(5) {
 }
 
 
+
+/************ BUTTONS ****************/
+input[type="button"] {
+    --b: 3px;   /* border thickness */
+    --s: .15em; /* size of the corner */
+    --c: #BD5532;
+
+    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background:
+            conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
+            var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+}
+
+input[type="button"]:hover, input[type="button"]:focus-visible {
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+}
+input[type="button"]:active {
+    background: var(--c);
+    color: #fff;
+}
+
+input[type="button"] {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    cursor: pointer;
+    border: none;
+    margin: .1em;
+}
+
+
+
+
 /************ INSECT PAGES ****************/
 #insect_def {
     display: flex;
@@ -314,4 +340,15 @@ div.item:nth-of-type(5) {
 
 
 
+/************ ADOPT FORM ****************/
+fieldset {
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
 
+.wide_input{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

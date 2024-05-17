@@ -23,7 +23,31 @@ radios.forEach((radio, index) => {
                 h1.textContent = "Your choice: monster";
                 break;
             default:
-                h1.textContent = "Your choice: unknown";
+                h1.textContent = "Your choice: Araneae";
         }
     });
 });
+
+
+
+
+
+function sendForm() {
+    // Select the form
+    var form = document.getElementById('QuizId');
+
+    // Select all input and select elements within the form
+    var inputs = form.querySelectorAll('input, select');
+
+    // Clear the value of each input and select element
+    inputs.forEach(function(input) {
+        input.value = '';
+    });
+
+    // Hide the button & text
+    document.getElementById('send_form_info').style.display = 'none';
+    document.getElementById('send_form_info_p').style.display = 'none';
+
+    // Change the text of the (empty) h1 element
+    document.getElementById('shipping-time').textContent = 'Your coordinates were saved. Your insect will arrive soon!';
+}

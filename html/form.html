@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adopt your insect!</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+
+<header>
+    <h1>Adopt your insect!</h1>
+
+    <nav>
+        <div class="header-nav">
+            <a href="./home.html">
+                <img src="https://cdn1.iconfinder.com/data/icons/freeline/32/home_house_real_estate-1024.png" alt="">
+                Home
+            </a>
+        </div>
+        <!-- | -->
+        <div class="header-nav">
+            <a href="./about.html">
+                <img src="https://cdn2.iconfinder.com/data/icons/user-interface-169/32/about-1024.png" alt="">
+                About
+            </a>
+        </div>
+    </nav>
+</header>
+
+
+
+
+<form method="post" name="Quiz" action="#" class="box" id="QuizId" onsubmit="return false">
+
+    <fieldset class="list-container" id="information">
+        <legend>Your infos</legend>
+        <ul>
+            <li>
+                First name:
+                <label><input class="wide_input" type="text" name="first" required></label>
+            </li>
+            <li>
+                Last name:
+                <label> <input class="wide_input" type="text" name="last" required> </label>
+            </li>
+            <li>
+                Date of birth:
+                <label> <input class="wide_input" type="date" name="birth" required> </label>
+            </li>
+            <li>
+                Email address:
+                <label> <input class="wide_input" type="email" name="email" placeholder="email@aaa.com" required> </label>
+            </li>
+            <li>
+                Physical address:
+                <label><input class="wide_input" type="text" name="address" placeholder="87–135 Brompton Road London SW1X 7XL" required></label>
+            </li>
+            <li>
+                Status:
+                <label>
+                    <select class="wide_input" name="status" required>
+                        <option value="" disabled selected>Select your status</option>
+                        <option>Student</option>
+                        <option>Developer</option>
+                        <option>Entrepreneur</option>
+                    </select>
+                </label>
+            </li>
+        </ul>
+
+        <input id="send_form_info" type="button" value = "Receive!" onclick="sendForm()">
+        <p id="send_form_info_p">Click to receive your insect now!</p>
+
+    </fieldset>
+
+    <section>
+        <h1 id="shipping-time"> </h1>
+    </section>
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <nav>
+
+            <div class="nav-div">
+                <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-2/24/copyright-512.png" alt="©️">
+                2024 Hormone4 & Chevroum
+            </div>
+
+            <div class="nav-div">
+                |
+            </div>
+
+            <div class="nav-div">
+                <a href="https://github.com/Hormone4">
+                    <img src="https://cdn3.iconfinder.com/data/icons/social-media-pack-12/512/Github-1024.png" alt="github">
+                    Hormone4
+                </a>
+            </div>
+
+            <div class="nav-div">
+                |
+            </div>
+
+            <div class="nav-div">
+                <a href="https://github.com/Chevroum">
+                    <img src="https://cdn3.iconfinder.com/data/icons/social-media-pack-12/512/Github-1024.png" alt="github">
+                    Chevroum
+                </a>
+            </div>
+
+        </nav>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
