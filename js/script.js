@@ -20,7 +20,7 @@ radios.forEach((radio, index) => {
                 h1.textContent = "Your choice: Diptera";
                 break;
             case 3:
-                h1.textContent = "Your choice: monster";
+                h1.textContent = "Your choice: Polyneoptera";
                 break;
             default:
                 h1.textContent = "Your choice: Araneae";
