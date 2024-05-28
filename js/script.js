@@ -34,20 +34,30 @@ radios.forEach((radio, index) => {
 
 function sendForm() {
     // Select the form
-    var form = document.getElementById('QuizId');
+    const form = document.getElementById('QuizId');
 
     // Select all input and select elements within the form
-    var inputs = form.querySelectorAll('input, select');
+    const inputs = form.querySelectorAll('input, select');
 
-    // Clear the value of each input and select element
-    inputs.forEach(function(input) {
-        input.value = '';
+    // Check if all required fields are filled
+    const allFilled = Array.from(inputs).every(function (input) {
+        return input.required ? input.value !== '' : true;
     });
 
-    // Hide the button & text
-    document.getElementById('send_form_info').style.display = 'none';
-    document.getElementById('send_form_info_p').style.display = 'none';
+    if (allFilled) {
+        // Clear the value of each input and select element
+        inputs.forEach(function(input) {
+            input.value = '';
+        });
 
-    // Change the text of the (empty) h1 element
-    document.getElementById('shipping-time').textContent = 'Your coordinates were saved. Your insect will arrive soon!';
+        // Hide the button & text
+        document.getElementById('send_form_info').style.display = 'none';
+        document.getElementById('send_form_info_p').style.display = 'none';
+
+        // Change the text of the (empty) h1 element
+        document.getElementById('shipping-time').textContent = 'Your coordinates were saved. Your insect will arrive soon!';
+    } else {
+        // Change the text of the (empty) h1 element
+        document.getElementById('shipping-time').textContent = 'Please fill all required fields before submitting.';
+    }
 }
